@@ -22,13 +22,8 @@ public interface ApiInterface {
             @Query("per_page") int perpage
    );
 
-    @Headers("Authorization: Client-ID "+API_KEY)
-    @GET("/search/photos")
 
-    Call<List<SearchModel>>searchImage(
-            @Query("query") String query
 
-    );
 
 
 
